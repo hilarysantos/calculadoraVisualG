@@ -1,0 +1,47 @@
+Inicio
+   // Seção de comandos, procedimento, funções, operadores, etc...
+   escreval ("Bem vindo à Calculadora Digital!")
+
+   enquanto (escolhaProblema < 5) faca
+   
+      escreval ("O que você deseja fazer? 1. Soma 2. Subtração 3. Divisão 4. Multiplicação 5. Sair")
+      leia (escolhaProblema)
+      escolha escolhaProblema
+         caso 1
+            escreval ("Digite o primeiro número:")
+            leia (problema[1])
+            escreval ("Digite o segundo número:")
+            leia (problema[2])
+            problema[3] <- problema [1] + problema[2]
+            escreval (problema [1], " + ", problema[2], " = ", problema[3])
+         caso 2
+            escreval ("Digite o primeiro número:")
+            leia (problema[1])
+            escreval ("Digite o segundo número:")
+            leia (problema[2])
+            problema[3] <- problema [1] - problema[2]
+            escreval (problema [1], " - ", problema[2], " = ", problema[3])
+         caso 3
+            escreval ("Digite o primeiro número:")
+            leia (problema[1])
+            escreval ("Digite o segundo número:")
+            leia (problema[2])
+               se (problema[2] = 0) entao
+               escreval ("O segundo número deve ser diferente de 0. Digite o segundo número:")
+               leia (problema[2])
+               fimse
+            problema[3] <- problema [1] / problema[2]
+            escreval (problema [1], " / ", problema[2], " = ", problema[3])
+         caso 4
+            escreval ("Digite o primeiro número:")
+            leia (problema[1])
+            escreval ("Digite o segundo número:")
+            leia (problema[2])
+            problema[3] <- problema [1] * problema[2]
+            escreval (problema [1], "*" , problema[2], " = ", problema[3])
+         caso 5
+            escreval ("Obrigado por usar a Calculadora Digital! Até mais!")
+      fimescolha
+      
+   fimenquanto
+fimalgoritmo
